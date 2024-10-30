@@ -3,11 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API\API.csproj", "{8ACCF8A0-2335-4032-B907-6CC61A4E4181}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API", "API\API.csproj", "{8ACCF8A0-2335-4032-B907-6CC61A4E4181}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E04EEBAB-35C0-4824-A3B6-56315C998035}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTest", "UnitTest", "{C7BD7195-6D7F-4D56-A502-F6CB07ECE955}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{0CBE6A9E-5BA5-40D3-BCE5-51763F438232}"
+	ProjectSection(SolutionItems) = preProject
+		db_script.sql = db_script.sql
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eva.Tests", "EvaUnitTest\Eva.Tests.csproj", "{E63C09B8-1B08-46E5-9D8A-AC7491AF1DBB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8ACCF8A0-2335-4032-B907-6CC61A4E4181} = {8ACCF8A0-2335-4032-B907-6CC61A4E4181}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,12 +29,17 @@ Global
 		{8ACCF8A0-2335-4032-B907-6CC61A4E4181}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8ACCF8A0-2335-4032-B907-6CC61A4E4181}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8ACCF8A0-2335-4032-B907-6CC61A4E4181}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E63C09B8-1B08-46E5-9D8A-AC7491AF1DBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E63C09B8-1B08-46E5-9D8A-AC7491AF1DBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E63C09B8-1B08-46E5-9D8A-AC7491AF1DBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E63C09B8-1B08-46E5-9D8A-AC7491AF1DBB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{8ACCF8A0-2335-4032-B907-6CC61A4E4181} = {E04EEBAB-35C0-4824-A3B6-56315C998035}
+		{E63C09B8-1B08-46E5-9D8A-AC7491AF1DBB} = {C7BD7195-6D7F-4D56-A502-F6CB07ECE955}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C0E6709C-A058-4726-8ED9-D03343517A23}
